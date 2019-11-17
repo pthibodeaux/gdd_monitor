@@ -1,1 +1,3 @@
-# gdd_monitor
+# gds_monitor
+#
+# practice angular app
