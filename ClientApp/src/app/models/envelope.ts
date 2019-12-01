@@ -1,4 +1,4 @@
-class Envelope<T> {
+export interface Envelope<T> {
     operationId: string;
     resultContent: T;
 }

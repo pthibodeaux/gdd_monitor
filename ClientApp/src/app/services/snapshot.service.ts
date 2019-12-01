@@ -3,6 +3,7 @@ import { RuntimeSetting } from '../models/runtimeSetting';
 import { MOCK_RUNTIMESETTINGS } from '../models/mock-runtimeSettings';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Envelope } from '../models/envelope';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,6 @@ export class SnapshotService {
   }
 
   getSettings2 (): Observable<Envelope<RuntimeSetting[]>> {
-    return this.http.get<RuntimeSetting[]>(this.settingsURL)
+    return this.http.get<Envelope<RuntimeSetting[]>>(this.settingsURL);
   }
 }

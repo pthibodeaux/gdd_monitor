@@ -13,7 +13,7 @@ export class FetchDataComponent implements OnInit {
   public settings: RuntimeSetting[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string, private snapshotService: SnapshotService) {
-    //alert(baseUrl + 'weatherforecast');
+    // alert(baseUrl + 'weatherforecast');
 
     // try {
     //   http.get<ResultEnvelope>('http://qa.dstransformation.com/snapshot/api/SnapshotControls/GetRuntimeSettings').subscribe(result => {
